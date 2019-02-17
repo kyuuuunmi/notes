@@ -24,11 +24,10 @@ title:                 kuuuunmi
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
 description:           >
-  "Best Jekyll Theme by a Mile".
-  **Hydejack** is your presence on the web, featuring a blog, portfolio, and resume.
+  "Just started".
 
 # A shorter description for the sidebar.
-tagline:               '"Best Jekyll Theme by a Mile"'
+tagline:               '"Just Started"'
 
 # A list of keywords for your blog
 keywords: []
@@ -36,12 +35,14 @@ keywords: []
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.
 # It also used by the `jekyll-seo-tag` plugin.
-logo: /assets/icons/icon.png
+logo: /assets/img/me.jpg
+# logo: /assets/icon/icon.png
 
 # This should be the same author as first entry in `_data/authors.yml`.
 author:
   name: Yunmi Ko
   email: kyuuuunmi@gmail.com
+  picture: /assets/img/me.jpg
   # Used by `jekyll-seo-tag`:
   # twitter:             <username>
 
@@ -69,8 +70,8 @@ paginate_path: /page-:num/
 # ========================================================================================
 
 # Sidebar image and theme color of the site.
-accent_image: /assets/img/sidebar-bg.jpg
-accent_color: rgb(79,177,186)
+accent_image: /assets/img/sidebar_bg.jpg
+accent_color: rgb(131,154,195)
 
 # This is used for the `theme-color` meta tag,
 # which changes the background color of the browser UI in certain browsers.
