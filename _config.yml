@@ -24,7 +24,7 @@ title:                 kuuuunmi
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
 description:           >
-  "Just started".
+  "just started".
 
 # A shorter description for the sidebar.
 tagline:               '"Just Started"'
@@ -48,8 +48,7 @@ author:
 
 # This text will appear in a `<small>` tag in the footer of every page.
 copyright: >
-  © 2018. All rights reserved.
-  Open `_config.yml` to edit this text.
+  © 2019. Ko yunmi. All rights reserved.
 
 # Add links to the footer.
 # Typically you'll want to link to your impress, cookies or privacy policy, etc.

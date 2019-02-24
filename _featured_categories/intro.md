@@ -5,5 +5,5 @@ slug: intro
 menu: true
 order: 1
 description: >
-  Blah blah~  
+  자리잡는 중입니다.
 ---
