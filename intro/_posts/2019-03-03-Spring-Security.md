@@ -62,6 +62,11 @@ ProviderManager은 AuthenticationManager의 구현체로, **AuthenticationProvid
 
 
 
+## 참고
+- [스프링 시큐리티란?][http://springmvc.egloos.com/504862]
+- [Spring Security와 보안, 첫번째 이야기][http://www.nextree.co.kr/p1886/]
+- [Spring handler Interceptor vs Servlet Filter][https://medium.com/@ohjongsung/spring-handlerinterceptor-vs-servlet-filter-a78a85ebc512]
+
 [스프링시큐리티공식페이지]: https://spring.io/projects/spring-security
 [Session Fixation 공격이란?]: https://reiphiel.tistory.com/entry/session-fixation-vulnerability  
 [X-Frame-Options이란?]: (https://blog.one0.me/etc/X-Frame-Options-%EC%9D%B4%EB%9E%80/)
