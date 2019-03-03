@@ -2,4 +2,4 @@
 
 ## v1
 
-Initail
+Initial
