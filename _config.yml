@@ -19,15 +19,15 @@ baseurl: "/notes"
 lang: en
 
 # The title of your blog. Used in the sidebar and the browser tab.
-title:                 kuuuunmi
+title: Breathing Logs 
 
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
 description:           >
-  "just started".
+  "Si vales bene est, ego valeo".
 
 # A shorter description for the sidebar.
-tagline:               '"Just Started"'
+tagline:               '"Si vales bene est, ego valeo"'
 
 # A list of keywords for your blog
 keywords: []
