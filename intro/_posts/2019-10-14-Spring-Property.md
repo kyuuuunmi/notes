@@ -45,9 +45,9 @@ private String dbUrl;
 
 ```xml
 <bean id="myProps" class="org.springframework.beans.factory.config.PropertiesFactoryBean">
-  <property name="location">
-		<value>classpath:my.properties</value>
-	</property>
+    <property name="location">
+        <value>classpath:my.properties</value>
+    </property>
 </bean>
 ```
 
@@ -65,16 +65,19 @@ private String dbUrl;
 ```
 
 
-> `@Value` 어노테이션을 사용할 때, `${..}`와 `#{..}`의 차이는 ?  
-`${..}`의 단점은 수동 주입이기 때문에, 필드에 매칭되는 키 값이 존재하지 않아도 어플리케이션 동작 시 아무런 경고도 나타나지 않는다. 그래서 의도하지 않은 오타로 키 값을 선언했을 때 해당되는 값이 존재하지 않아도 아무런 에러를 일으키지 않는다. `#{..}`을 사용한 SpEL 의 장점은 능동적인 주입으로 선언된 `Properties` 빈이 없으면 에러를 발생시킨다. 물론, 키에 해당하는 값이 없으면 null인 경우가 나타날 수 있다. <br>
-[Spring Expression Language (SpEL) with @Value: dollar vs. hash ($ vs. #)](https://stackoverflow.com/questions/5322632/spring-expression-language-spel-with-value-dollar-vs-hash-vs), [Spring 3.0 (59) 프로퍼티 파일 이용하기 - placeholder vs SpEL](http://toby.epril.com/?p=968)
+> `@Value` 어노테이션을 사용할 때, `${...}`와 `#{...}`의 차이는 ?  
+`${...}`의 단점은 수동 주입이기 때문에, 필드에 매칭되는 키 값이 존재하지 않아도 어플리케이션 동작 시 아무런 경고도 나타나지 않는다. 그래서 의도하지 않은 오타로 키 값을 선언했을 때 해당되는 값이 존재하지 않아도 아무런 에러를 일으키지 않는다. `#{...}`을 사용한 SpEL 의 장점은 능동적인 주입으로 선언된 `Properties` 빈이 없으면 에러를 발생시킨다. 물론, 키에 해당하는 값이 없으면 null인 경우가 나타날 수 있다. <br>
+참고 : [Spring Expression Language (SpEL) with @Value: dollar vs. hash ($ vs. #)](https://stackoverflow.com/questions/5322632/spring-expression-language-spel-with-value-dollar-vs-hash-vs), [Spring 3.0 (59) 프로퍼티 파일 이용하기 - placeholder vs SpEL](http://toby.epril.com/?p=968)
 
 
 
 ## Spring boot 에서 외부 Property 설정하기
 
 Spring boot는 Type-Safe한 설정을 권하는 가이드가 있다.  
-[Type-safe Configuration Properties](https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-external-config.html#boot-features-external-config-typesafe-configuration-properties)
+[Type-safe Configuration Properties](https://docs.spring.io/spring-boot/docs/current/reference/html/spring-boot-features.html#boot-features-external-config-typesafe-configuration-properties)
+
+https://docs.spring.io/spring-boot/docs/current/reference/html/spring-boot-features.html#boot-features-external-config-typesafe-configuration-properties
+
 
 Property 값들에 맞는 구조의 POJO를 선언하여 사용해서 유효성 검사를 강제로 하게끔 하는데,
 
@@ -117,6 +120,10 @@ private MyProperties properties;
 
 ```
 
+## 어떤 방법이 좋은가 ?
+
+수동적인 설정 값 주입 방법은 매핑되는 key 값이 없을 때 에러를 발생시키지 않고 넘어갈 수 있어 위험하다.  
+그러므로 가능하다면 능동적인 값 주입 방법을 사용하여 안정성을 높이는 것, Spring의 경우 [2번](#2-propertiesfactorybean-사용하여-설정-값을-properties-인스턴스로-접근하기)을, Spring boot의 경우는 공식 [가이드](#spring-boot-에서-외부-property-설정하기)를 따르는 것이 좋겠다. 
 
 
 
